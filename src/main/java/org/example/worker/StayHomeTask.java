@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class StayHomeTask {
-    @JobWorker(type = "stayHome", autoComplete = true)
+    @JobWorker(type = "stayHome")
     public void stayHome() {
         log.info("Выполняется Task: stayHome");
     }

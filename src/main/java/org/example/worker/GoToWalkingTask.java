@@ -14,7 +14,7 @@ import static java.lang.Math.random;
 @Component
 @Slf4j
 public class GoToWalkingTask {
-    @JobWorker(type = "goToWalking", autoComplete = true)
+    @JobWorker(type = "goToWalking")
     public void goToWalking(ActivatedJob job) {
         log.info("Выполняется Task: goToWalking");
 

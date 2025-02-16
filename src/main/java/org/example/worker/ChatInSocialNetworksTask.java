@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class ChatInSocialNetworksTask {
     ZeebeClient zeebeClient;
 
-    @JobWorker(type = "chatInSocialNetworks", autoComplete = true)
+    @JobWorker(type = "chatInSocialNetworks")
     public void chatInSocialNetworks(@Variable String messageId) {
         log.info("Выполняется Task: chatInSocialNetworks");
 

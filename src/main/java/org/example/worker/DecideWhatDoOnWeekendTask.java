@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class DecideWhatDoOnWeekendTask {
-    @JobWorker(type = "decideWhatDoOnWeekend", autoComplete = false)
+    @JobWorker(type = "decideWhatDoOnWeekend")
     public ProcessVariables decideWhatDoOnWeekend(ActivatedJob job) {
         log.info("Выполняется Task: decideWhatDoOnWeekend");
         return job.getVariablesAsType(ProcessVariables.class);
